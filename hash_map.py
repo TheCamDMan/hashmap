@@ -1,11 +1,21 @@
 # Name: Cameron Blankenship
-# OSU Email: blankeca@oregonstate.edu
 # Course: CS261 - Data Structures
-# Assignment: Assignment 7: HashMap Implementation
-# Due Date: 12/3/2021
+# HashMap Implementation
+# Created: 12/3/2021
 # Description: An implementation of a HashMap with methods
 #   empty_buckets(), table_load(), clear(), put(), contains_key()
 #   get(), remove(), resize_table(), and get_keys().
+
+#############################################
+#   This code is to serve as an             #
+#   example of my code style and logic.     #
+#   This is not functioning code due to     #
+#   a dependency on a university file that  #
+#   was provided.                           #
+#                                           #
+#   DynamicArray and LinkedList classes     #
+#   are not function.                       #
+#############################################
 
 
 # Import pre-written DynamicArray and LinkedList classes
@@ -42,7 +52,7 @@ class HashMap:
         Init new HashMap based on DA with SLL for collision resolution
         DO NOT CHANGE THIS METHOD IN ANY WAY
         """
-        self.buckets = DynamicArray()
+        self.buckets = [DynamicArray()]
         for _ in range(capacity):
             self.buckets.append(LinkedList())
         self.capacity = capacity
