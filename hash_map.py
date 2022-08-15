@@ -9,12 +9,11 @@
 #############################################
 #   This code is to serve as an             #
 #   example of my code style and logic.     #
-#   This is not functioning code due to     #
-#   a dependency on a university file that  #
-#   was provided.                           #
+#                                           #
 #                                           #
 #   DynamicArray and LinkedList classes     #
-#   are not function.                       #
+#   are provided by the instructor to       #
+#   emulate those data structures.          #
 #############################################
 
 
@@ -52,7 +51,7 @@ class HashMap:
         Init new HashMap based on DA with SLL for collision resolution
         DO NOT CHANGE THIS METHOD IN ANY WAY
         """
-        self.buckets = [DynamicArray()]
+        self.buckets = DynamicArray()
         for _ in range(capacity):
             self.buckets.append(LinkedList())
         self.capacity = capacity
